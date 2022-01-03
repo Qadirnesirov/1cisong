@@ -1,13 +1,13 @@
 {
     "name": "Song-Downloader-Bot",
     "description": "A BOT TO DOWNLOAD MUSIC FROM YOUTUBE.",
-    "logo": "https://telegra.ph/file/0f7ec149c4b9ed57ba5ed.jpg",
+    "logo": "https://telegra.ph/file/1aa954cf0a324b523a5e8.jpg",
     "stack": "container",
     "keywords": [
         "song",
         "youtube",
         "Telegram",
-        "LA LISA"
+        "JISOO"
     ],
     "website": "https://github.com/raihanvaliyakath",
     "repository": "https://github.com/raihanvaliyakath/SONG-BOT-V2",
