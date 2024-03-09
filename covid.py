@@ -12,7 +12,7 @@ from pyrogram import filters, Client as DonLee_Robot_V2
 from DonLee_Robot_V2.Config_Vars.H_Vars import API, BUTTONS
 from DonLee_Robot_V2 import Config, Import 
 
-@DonLee_Robot_V2.on_message(filters.command("covid"))
+@DonLee_Robot_V2.on_message(filters.command("qadir"))
 async def reply_info(client, message):
     query = message.text.split(None, 1)[1]
     await message.reply_photo(
