@@ -1,7 +1,7 @@
 {
-    "name": "Song-Downloader-Bot",
-    "description": "A BOT TO DOWNLOAD MUSIC FROM YOUTUBE.",
-    "logo": "https://telegra.ph/file/1aa954cf0a324b523a5e8.jpg",
+    "name": "oTo Song Bot",
+    "description": "Azərbaycan dilində Musiqi botu.",
+    "logo": "https://telegra.ph/file/5577798a00dfa29cd4754.jpg",
     "stack": "container",
     "keywords": [
         "song",
@@ -9,9 +9,9 @@
         "Telegram",
         "JISOO"
     ],
-    "website": "https://github.com/raihanvaliyakath",
-    "repository": "https://github.com/raihanvaliyakath/SONG-BOT-V2",
-    "success_url": "https://t.me/thugbotsgroup",
+    "website": "https://github.com/",
+    "repository": "https://github.com//SONG-BOT-V2",
+    "success_url": "https://t.me/otobotsport",
     "env": {
         "BOT_TOKEN": {
             "description": "Your Telegram Bot Token from @BotFather",
