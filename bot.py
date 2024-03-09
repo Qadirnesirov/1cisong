@@ -17,9 +17,9 @@ from pyrogram.errors.exceptions.bad_request_400 import PeerIdInvalid
 
 Bot = Client(
     "Song Downloader Bot",
-    bot_token = os.environ["BOT_TOKEN"],
-    api_id = int(os.environ["API_ID"]),
-    api_hash = os.environ["API_HASH"]
+    bot_token = os.environ["BOT_TOKEN", "5999577985:AAHqyusBARcaEUatUqIYKC3MJtQLVCWLR6c"],
+    api_id = int(os.environ["API_ID", "24066716"]),
+    api_hash = os.environ["API_HASH", "09e30e6e0b1a4c71e43a055979c51b3b"]
 )
 
 db = Database()
@@ -29,7 +29,7 @@ db = Database()
 
 START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Support📕', url=f"https://t.me/M_STER_TECH_GROUP"), 
+        InlineKeyboardButton('Support📕', url=f"https://t.me/otobotsport"), 
         InlineKeyboardButton(text="SEARCH🔎", switch_inline_query_current_chat="")
         ],[
         InlineKeyboardButton('HELP & USAGE⚙️', callback_data ='cmds') 
@@ -149,7 +149,7 @@ def a(client, message):
             #     m.edit("Exceeded 30mins cap")
             #     return
 
-            performer = f"[@NazriyaSongBot]" 
+            performer = f"[@oTo_Song_bot]" 
             thumb_name = f'thumb{message.message_id}.jpg'
             thumb = requests.get(thumbnail, allow_redirects=True)
             open(thumb_name, 'wb').write(thumb.content)
@@ -170,7 +170,7 @@ def a(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f'❍📖 <b>Title:</b> <a href="{link}">{title}</a>\n❍⌚ <b>Duration:</b> <code>{duration}</code>\n❍📤 <b>Uploaded By:</b> <a href="https://t.me/NazriyaSongBot">NazriyaSongBot</a>'
+        rep = f'❍📖 <b>Title:</b> <a href="{link}">{title}</a>\n❍⌚ <b>Duration:</b> <code>{duration}</code>\n❍📤 <b>Uploaded By:</b> <a href="https://t.me/oTo_Song_bot">oTo_Song_bot</a>'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -178,7 +178,7 @@ def a(client, message):
         message.reply_audio(audio_file, caption=rep, parse_mode='HTML',quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
     except Exception as e:
-        m.edit('**Something Went Wrong Report This at @NAZRIYASUPPORT!!**')
+        m.edit('**Something Went Wrong Report This at @otobotsport!!**')
         print(e)
     try:
         os.remove(audio_file)
